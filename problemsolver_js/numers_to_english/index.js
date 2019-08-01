@@ -8,7 +8,7 @@ const numbers_tens = NUMBERS.numbers_tens;
 console.log(`start`);
 console.log(numbers);
 
-class NumbeR {
+class NumberR {
     constructor(value, position) {
         this.value = value;
         this.position = position;
@@ -23,12 +23,12 @@ class NumbeR {
             } else if (position === 2) {
                 return numbers_tens[value];
             }
-        };
+        }
         function typeF(position) {
             const threshold = position % 3;
             console.log('threshold | ', threshold);
             return threshold;
-        };
+        }
         function howBig(type, position) {
             if (position > 3) {
                 if (type === 1) {
@@ -43,7 +43,6 @@ class NumbeR {
                 }
             }
         }
-
     }
 }
 
@@ -52,11 +51,11 @@ let test_number = 4321;
 
 function parseNumberIntoEnglishWords(number) {
     let res = '';
-    arr = String(number).split('').reverse();
-    objArr = [];
-    i = 1;
+    let arr = String(number).split('').reverse();
+    let objArr = [];
+    let i = 1;
     arr.forEach(element => {
-        const numberObj = new NumbeR(element, i++);
+        const numberObj = new NumberR(element, i++);
         objArr.push(numberObj);
     });
     console.log('objArr:', objArr);

@@ -10,7 +10,7 @@ const numbers = {
     7: 'seven',
     8: 'eight',
     9: 'nine'
-}
+};
 
 const numbers_teen = {
     10: 'ten',
@@ -23,7 +23,7 @@ const numbers_teen = {
     17: 'seventeen',
     18: 'eighteen',
     19: 'nineteen'
-}
+};
 
 const numbers_tens = {
     2: 'twenty',
@@ -34,7 +34,7 @@ const numbers_tens = {
     7: 'seventy',
     8: 'eighty',
     9: 'ninety'
-}
+};
 
 const numbers_big = {
     1: 'hundred',
@@ -47,7 +47,7 @@ const numbers_big = {
     8: 'sextillion',
     9: 'septillion',
     10: 'octillion'
-}
+};
 
 const space = ' ';
 
