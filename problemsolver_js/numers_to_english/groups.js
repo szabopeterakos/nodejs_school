@@ -7,17 +7,13 @@ function createObject(arr) {
     for (let i = 0; i < arr.length; i++) {
         const e = arr[i];
         const three_index = i % 3;
-        console.log(three_index);
+        group.push(stringToNumber(e));
         if(three_index === 0){
-            group.push(e);
             arrays.push(group);
             group = [];
-        } else {
-            group.push(e);
         }
-
     }
-    console.log('arr: ', arrays);
+    console.log('grouped arrays: ', arrays);
     return arrays;
 }
 
@@ -25,11 +21,16 @@ function createArray(num) {
     let arr = [];
     const numString = String(num);
     arr = numString.split("");
-    console.log('arr: ', arr);
+    console.log('full array: ', arr);
     return arr;
 }
 
+function stringToNumber(str){
+    return Number(str);
+}
+
 function group(num) {
+    console.log('starting number: ',num);
     const arr = createArray(num);
     const groupedObj = createObject(arr);
     return groupedObj;
