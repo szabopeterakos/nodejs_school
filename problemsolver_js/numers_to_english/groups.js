@@ -1,7 +1,7 @@
 const num1 = 6400;
 const num2 = 14656410;
 
-function createObject(arr) {
+function createGroupsArray(arr) {
     let arrays = [];
     let group = [];
     for (let i = 0; i < arr.length; i++) {
@@ -32,7 +32,7 @@ function stringToNumber(str){
 function group(num) {
     console.log('starting number: ',num);
     const arr = createArray(num);
-    const groupedObj = createObject(arr);
+    const groupedObj = createGroupsArray(arr);
     return groupedObj;
 };
 
