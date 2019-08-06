@@ -30,7 +30,7 @@ function length3(numbers) {
     numbers.reverse().forEach(n => {
         output += n.stringValue;
     })
-    console.log('output ||| ', output);
+    console.log('\noutput : ', output, '\n');
     return output;
 }
 
