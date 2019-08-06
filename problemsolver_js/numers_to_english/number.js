@@ -23,7 +23,6 @@ module.exports = class NumberR {
         }
         function typeF(position) {
             const threshold = position % 3;
-            console.log('threshold | ', threshold);
             return threshold;
         }
         function howBig(type, position) {

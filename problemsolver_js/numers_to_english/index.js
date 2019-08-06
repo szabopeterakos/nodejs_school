@@ -1,4 +1,3 @@
-console.log(`start`);
 // // import { space, numbers, numbers_big, numbers_teen, numbers_tens } from './numberas_consts.js';
 const NUMBERS = require("./numberas_consts");
 const NumberR = require("./number");
@@ -7,7 +6,6 @@ const numbers = NUMBERS.numbers;
 const numbers_big = NUMBERS.numbers_big;
 const numbers_teen = NUMBERS.numbers_teen;
 const numbers_tens = NUMBERS.numbers_tens;
-console.log(numbers);
 
 // let array = [0, 1, 12, 123, 1234, 12345, 101];
 let test_number = 4321;
@@ -21,7 +19,6 @@ function parseNumberIntoEnglishWords(number) {
         const numberObj = new NumberR(element, i++);
         objArr.push(numberObj);
     });
-    console.log('objArr:', objArr);
     const miniArr = objArr.slice(0, 3);
     length3(objArr);
 
@@ -29,7 +26,6 @@ function parseNumberIntoEnglishWords(number) {
 }
 
 function length3(numbers) {
-    // console.log('numbers', numbers);
     let output = '';
     numbers.reverse().forEach(n => {
         output += n.stringValue;
@@ -39,4 +35,3 @@ function length3(numbers) {
 }
 
 parseNumberIntoEnglishWords(test_number);
-console.log(`end`);
