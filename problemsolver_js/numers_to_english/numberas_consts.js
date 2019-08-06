@@ -49,7 +49,7 @@ const numbers_big = {
     10: 'octillion'
 };
 
-const space = ' ';
+const space = '-';
 
 // export { space, numberas_consts, numbers_big, numbers_teen, numbers_tens };
 exports.space = space;
