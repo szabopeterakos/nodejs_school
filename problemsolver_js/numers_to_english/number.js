@@ -1,11 +1,11 @@
-const NUMBERS = require("./numberas_consts");
+const NUMBERS = require("./numbers_consts");
 const numbers = NUMBERS.numbers;
 const space = NUMBERS.space;
 const numbers_big = NUMBERS.numbers_big;
 const numbers_teen = NUMBERS.numbers_teen;
 const numbers_tens = NUMBERS.numbers_tens;
 
-module.exports = class NumberR {
+module.exports = class NumberGroup {
     constructor(number, position) {
         this.number = number;
         this.position = this.positionCategorizer(position);

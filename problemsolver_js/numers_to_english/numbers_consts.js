@@ -1,5 +1,5 @@
 
-const numberas_consts = {
+const numbers_consts = {
     0: 'zero',
     1: 'one',
     2: 'two',
@@ -51,9 +51,9 @@ const numbers_big = {
 
 const space = '-';
 
-// export { space, numberas_consts, numbers_big, numbers_teen, numbers_tens };
+// export { space, numbers_consts, numbers_big, numbers_teen, numbers_tens };
 exports.space = space;
-exports.numbers = numberas_consts;
+exports.numbers = numbers_consts;
 exports.numbers_big = numbers_big;
 exports.numbers_teen = numbers_teen;
 exports.numbers_tens = numbers_tens;
