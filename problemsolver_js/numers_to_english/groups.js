@@ -13,8 +13,9 @@ function createGroupsArray(arr) {
             group = [];
         }
     }
-    console.log('grouped arrays: ', arrays.reverse());
-    return arrays.reverse();
+    arrays = arrays.reverse();
+    console.log('grouped arrays: ', arrays);
+    return arrays;
 }
 
 function createArray(num) {

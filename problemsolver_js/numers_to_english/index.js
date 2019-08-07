@@ -9,6 +9,9 @@ let test_number4 = 190;
 let test_number5 = 11;
 let test_number6 = 1000000;
 
+GroupMaker.groupMaker(0);
+GroupMaker.groupMaker(1);
+GroupMaker.groupMaker(12);
 GroupMaker.groupMaker(120);
 GroupMaker.groupMaker(1200);
 GroupMaker.groupMaker(12000);

@@ -1,0 +1,15 @@
+{
+  "name": "numers_to_english",
+  "version": "1.0.0",
+  "description": "Simple number to english words translater application",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
