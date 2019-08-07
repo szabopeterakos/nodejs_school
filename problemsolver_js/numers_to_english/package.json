@@ -1,10 +1,10 @@
 {
-  "name": "numers_to_english",
+  "name": "numbers_to_english",
   "version": "1.0.0",
-  "description": "Simple number to english words translater application",
+  "description": "Simple number to english words translator application",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha || true"
   },
   "author": "",
   "license": "ISC",
