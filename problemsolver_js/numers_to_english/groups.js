@@ -8,13 +8,13 @@ function createGroupsArray(arr) {
         const e = arr[i];
         const three_index = i % 3;
         group.push(stringToNumber(e));
-        if(three_index === 0){
-            arrays.push(group);
+        if(three_index === 2 || i + 1 === arr.length){
+            arrays.push(group.reverse());
             group = [];
         }
     }
-    console.log('grouped arrays: ', arrays);
-    return arrays;
+    console.log('grouped arrays: ', arrays.reverse());
+    return arrays.reverse();
 }
 
 function createArray(num) {
@@ -22,7 +22,7 @@ function createArray(num) {
     const numString = String(num);
     arr = numString.split("");
     console.log('full array: ', arr);
-    return arr;
+    return arr.reverse();
 }
 
 function stringToNumber(str){
@@ -36,4 +36,6 @@ function group(num) {
     return groupedObj;
 };
 
-group(num2);
+// group(num2);
+
+module.exports.groupMaker = group;
